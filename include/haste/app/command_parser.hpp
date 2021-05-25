@@ -36,7 +36,6 @@ DEFINE_string(seeds_file, "path/to/file",
 DEFINE_bool(visualize, true, "Generate simple views of the tracker's internal states.");
 DEFINE_string(output_file, "path/to/file", "Dump tracking states into a specified files.");
 
-
 // Help Setup.
 DEFINE_bool(usage, false, "Show usage.");
 

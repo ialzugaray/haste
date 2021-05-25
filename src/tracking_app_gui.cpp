@@ -33,7 +33,7 @@ const auto kHelpMessage = "usage: ./tracking_app_gui \n"
 // clang-format on
 
 int main(int argc, char** argv) {
-  gflags::SetVersionString("1.0.0");
+  google::SetVersionString("1.0.0");
   google::InitGoogleLogging(argv[0]);
   FLAGS_alsologtostderr = true;
 
