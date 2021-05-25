@@ -25,9 +25,6 @@ auto HasteDifferenceStarTracker::updateHypothesesScore(const EventTuple &oldest_
     const auto &hypothesis = hypotheses_[i];
     auto &hypothesis_score = hypotheses_score_[i];
     auto &difference_patch = difference_patches_[i];
-
-    const auto hypothesis_model = eventWindowToModel(event_window_, hypothesis);
-
     updateDifferences_(difference_patch, newest_event, hypothesis, hypothesis_score, -1.0);
     updateDifferences_(difference_patch, oldest_event, hypothesis, hypothesis_score, +1.0);
   }
